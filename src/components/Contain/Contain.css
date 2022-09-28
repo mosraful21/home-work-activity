@@ -1,0 +1,32 @@
+.contain{
+    width: 300px;
+    height: 400px;
+    border: 1px solid #95A0A7;
+    border-radius: 8px;
+    position: relative;
+}
+.contain img{
+    width: 286px;
+    height: 150px;
+    border-radius: 8px;
+    margin: 7px;
+}
+.contain-info{
+    margin: 0 14px;
+}
+.btn-info{
+    width: 90%;
+    background: lightgreen;
+    height: 35px;
+    border: none;
+    border-radius:8px;
+    margin-left: 13px;
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-info:hover{
+    background-color: aqua;
+}
