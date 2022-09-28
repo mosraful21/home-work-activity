@@ -1,0 +1,40 @@
+.details{
+    background-color: lavenderblush;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 0 20px;
+    border-radius: 10px;
+}
+.btn-container{
+    height: 60px;
+    margin: 20px;
+    background-color: lavenderblush;
+    border-radius: 10px;
+}
+.btn{
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    margin-left: 18px;
+    border-radius: 45%;
+    margin-top: 12px;
+}
+.exercise-time, .break-time{
+    background-color: lavenderblush;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+}
+.activity-btn{
+    width: 90%;
+    background: lightgreen;
+    height: 40px;
+    border: none;
+    border-radius:8px;
+    margin-left: 13px;
+    margin-top: 20px;
+}
+.activity-btn:hover{
+    background-color: orange;
+}
