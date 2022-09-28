@@ -1,3 +1,22 @@
+.user-info{
+    display: flex;
+    margin-left: 20px;
+    margin-top: 35px;
+    align-items: center;
+}
+.user-info img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.user-info-details{
+    margin-left: 12px;
+    display: inline;
+    margin-top: -10px;
+}
+.user-info-details p{
+    margin-top: -20px;
+}
 .details{
     background-color: lavenderblush;
     display: flex;
@@ -20,6 +39,9 @@
     border-radius: 45%;
     margin-top: 12px;
 }
+.btn:hover{
+    background-color: lightgreen;
+}
 .exercise-time, .break-time{
     background-color: lavenderblush;
     padding: 15px;
@@ -27,14 +49,16 @@
     border-radius: 10px;
 }
 .activity-btn{
-    width: 90%;
+    width: 86%;
     background: lightgreen;
     height: 40px;
     border: none;
-    border-radius:8px;
-    margin-left: 13px;
-    margin-top: 20px;
+    border-radius: 8px;
+    margin: 20px 20px;
 }
 .activity-btn:hover{
     background-color: orange;
+}
+h3{
+    margin-left: 20px;
 }

@@ -1,0 +1,11 @@
+.blog-body{
+    background-color: rgba(211, 211, 211, 0.457);
+}
+.blog-container{
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+.blog-container p{
+    text-align: justify;
+}

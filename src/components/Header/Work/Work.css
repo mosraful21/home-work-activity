@@ -6,11 +6,24 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 45px;
-    margin: 50px 100px;
 }
 .contain-body{
-    background-color: rgba(211, 211, 211, 0.21);
+    margin: auto;
 }
 .work-info{
     margin-left: 100px;
+}
+
+@media screen and (max-width:665px) {
+    .contain-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .works-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px;
+    }
+    .work-info p, h2{
+        align-items: center;
+    }
 }

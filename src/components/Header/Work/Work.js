@@ -7,16 +7,16 @@ import './Work.css'
 const Work = () => {
     const [contains, setContains] = useState([]);
 
-    useEffect( () => {
+    useEffect(() => {
         fetch('contains.json')
-        .then(res => res.json())
-        .then(data => setContains(data))
+            .then(res => res.json())
+            .then(data => setContains(data))
     }, [])
 
     return (
         <div className='contain-container'>
             <div className='contain-body'>
-                <div className='work-info'>
+                <div>
                     <h2>Home-Work-Activity</h2>
                     <p>Select today’s activity</p>
                 </div>
@@ -30,7 +30,6 @@ const Work = () => {
                 </div>
             </div>
             <div className="cart-container">
-                <h2>cart part</h2>
                 <Cart> </Cart>
             </div>
         </div>
