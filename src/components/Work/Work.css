@@ -11,6 +11,9 @@
 .contain-body{
     margin: auto;
 }
+.title-name{
+    margin-left: 5px;
+}
 .work-info{
     margin-left: 100px;
 }
@@ -19,12 +22,15 @@
     align-items: center;
     justify-content: center;
 }
-.home-info{
+.activity-info{
     text-align: center;
     margin-top: -20px;
     margin-bottom: 35px;
     
 }
+
+
+
 @media screen and (max-width:665px) {
     .contain-container{
         grid-template-columns: repeat(1, 1fr);
