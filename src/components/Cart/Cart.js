@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Cart.css'
 import logo from '../../images/habib.jpeg';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { addToDb } from '../Timedb/Timedb';
+import { addToDb, getStoredTime } from '../Timedb/Timedb';
 
 const Cart = (props) => {
     const notify = () => {
@@ -23,6 +23,14 @@ const Cart = (props) => {
         addToDb(breakTime);
         setTime(breakTime);
     }
+    useEffect( () => {
+        const breakTime = [];
+        const Break = getStoredTime();
+        for(const bt in Break){
+            breakTime.push(bt);
+        }
+        setTime((breakTime[breakTime.length-1]));
+    }, [])
 
     return (
         <div className='cart-body'>

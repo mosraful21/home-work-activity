@@ -26,7 +26,7 @@ const Work = () => {
                 saveTime.push(time);
             }
         }
-    }, [])
+    }, [setCart])
 
     const handleAddToCart = (contain) => {
         const newCart = [...cart, contain];
