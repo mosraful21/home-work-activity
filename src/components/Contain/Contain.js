@@ -14,7 +14,7 @@ const Contain = (props) => {
                 <p>Daily Schedule : {schedule}</p>
                 <p>Time required  : <strong>{time}m</strong></p>
             </div>
-            <button onClick={() => handleAddToCart(props.c)} className='btn-info'>Add to list</button>
+            <button onClick={() => handleAddToCart(props.c)} className='btn-info'>Add to list </button>
         </div>
     )
 };
