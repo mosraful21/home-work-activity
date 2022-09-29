@@ -19,9 +19,9 @@ const Cart = (props) => {
     }
 
     const [breakTime, setTime] = useState(0);
-
     const addToCart = (breakTime) => {
-        addToDb(breakTime)
+        addToDb(breakTime);
+        setTime(breakTime);
     }
 
     return (
@@ -43,10 +43,10 @@ const Cart = (props) => {
 
             <h3>Add A Break</h3>
             <div className='btn-container'>
-                <button onClick={() => addToCart(setTime(5))} className='btn'>5m</button>
-                <button onClick={() => addToCart(setTime(10))} className='btn'>10m</button>
-                <button onClick={() => addToCart(setTime(15))} className='btn'>15m</button>
-                <button onClick={() => addToCart(setTime(20))} className='btn'>20m</button>
+                <button className='btn' onClick={() => addToCart(5)}>5m</button>
+                <button className='btn' onClick={() => addToCart(10)}>10m</button>
+                <button className='btn' onClick={() => addToCart(15)}>15m</button>
+                <button className='btn' onClick={() => addToCart(20)}>20m</button>
             </div>
 
             <h3>Exercise Details</h3>

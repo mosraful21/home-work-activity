@@ -6,7 +6,6 @@ const addToDb = (breakTime) => {
         BreakTime = JSON.parse(storedTime);
     }
 
-
     const time = BreakTime[breakTime];
     if (time) {
         const newTime = time + 1;
