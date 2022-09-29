@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Cart.css'
 import logo from '../../images/habib.jpeg';
 
@@ -11,6 +11,8 @@ const Cart = (props) => {
     for(const contain of cart){
         total = total + contain.time; 
     }
+
+    const [breakTime, setTime] = useState(0);
 
     return (
         <div className='cart-body'>
@@ -31,16 +33,16 @@ const Cart = (props) => {
 
             <h3>Add A Break</h3>
             <div className='btn-container'>
-                <button className='btn'>5m</button>
-                <button className='btn'>10m</button>
-                <button className='btn'>15m</button>
-                <button className='btn'>20m</button>
+                <button onClick={() => setTime(5)} className='btn'>5m</button>
+                <button onClick={() => setTime(10)} className='btn'>10m</button>
+                <button onClick={() => setTime(15)} className='btn'>15m</button>
+                <button onClick={() => setTime(20)} className='btn'>20m</button>
             </div>
 
             <h3>Exercise Details</h3>
             <div className='time-details'>
                 <p className='exercise-time'>Exercise time : {total} Minutes</p>
-                <p className='break-time'>Break time : 0 Minutes</p>
+                <p className='break-time'>Break time : {breakTime} Minutes</p>
             <button className='activity-btn'>Activity Completed</button>
             </div>
 
