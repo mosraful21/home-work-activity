@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import './Cart.css'
 import logo from '../../images/habib.jpeg';
-
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Cart = (props) => {
+    const notify = () => toast("Successfully Done Your Activity");
+
     const {cart} = props;
 
     let total = 0;
@@ -43,7 +45,7 @@ const Cart = (props) => {
             <div className='time-details'>
                 <p className='exercise-time'>Exercise time : {total} Minutes</p>
                 <p className='break-time'>Break time : {breakTime} Minutes</p>
-            <button className='activity-btn'>Activity Completed</button>
+            <button className='activity-btn' onClick={notify}>Activity Completed</button> <ToastContainer />
             </div>
 
         </div>
