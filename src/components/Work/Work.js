@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
 import Contain from '../Contain/Contain';
 import './Work.css'
+import { getStoredTime } from '../Timedb/Timedb';
 
 
 const Work = () => {
@@ -15,6 +16,17 @@ const Work = () => {
             .then(res => res.json())
             .then(data => setContains(data))
     }, []);
+
+    useEffect( () => {
+        const storedTime = getStoredTime();
+        const saveTime = [];
+        for (const breakTime in storedTime){
+            if(breakTime){
+                const time = storedTime[breakTime];
+                saveTime.push(time);
+            }
+        }
+    }, [])
 
     const handleAddToCart = (contain) => {
         const newCart = [...cart, contain];
