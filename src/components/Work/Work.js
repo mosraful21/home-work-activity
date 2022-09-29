@@ -8,12 +8,18 @@ import './Work.css'
 
 const Work = () => {
     const [contains, setContains] = useState([]);
+    const [cart, setCart] = useState([]);
 
     useEffect(() => {
         fetch('contains.json')
             .then(res => res.json())
             .then(data => setContains(data))
-    }, [])
+    }, []);
+
+    const handleAddToCart = (contain) => {
+        const newCart = [...cart, contain];
+        setCart(newCart);
+    }
 
     return (
         <div className='contain-container'>
@@ -29,6 +35,7 @@ const Work = () => {
                         contains.map(contain => <Contain
                             key={contain.id}
                             c={contain}
+                            handleAddToCart={handleAddToCart}
                         ></Contain>)
                     }
                 </div>
@@ -36,7 +43,7 @@ const Work = () => {
 
 
             <div className="cart-container">
-                <Cart> </Cart>
+                <Cart cart={cart}> </Cart>
             </div>
 
         </div>

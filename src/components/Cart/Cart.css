@@ -1,3 +1,8 @@
+.cart-body{
+    position: sticky;
+    top: 0;
+    background-color: rgba(211, 211, 211, 0.412);
+}
 .user-info{
     display: flex;
     margin-left: 20px;

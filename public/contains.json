@@ -4,41 +4,41 @@
         "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1GK2jgyjoUxTbirlzqsRtKy8pIWZNAUmQoQ&usqp=CAU",
         "name": "Reading Books",
         "details": "I read in book now",
-        "time": "50s"
+        "time": 50
     },
     {
         "id": 2,
         "img": "https://www.helpguide.org/wp-content/uploads/calories-counting-diet-food-control-and-weight-loss-concept-calorie-768.jpg",
         "name": "Eating Foods",
         "details": "I read in book now",
-        "time": "15s"
+        "time": 15
     },
     {
         "id": 3,
         "img": "https://media.istockphoto.com/photos/total-relaxation-picture-id540861476?k=20&m=540861476&s=612x612&w=0&h=Yyuu__5VXLqF4aC4rKECLuKJEH8F7tHY_zmuVJ9XwtA=",
         "name": "Rest Time",
         "details": "I read in book now",
-        "time": "20s"
+        "time": 20
     },
     {
         "id": 4,
         "img": "https://cff2.earth.com/uploads/2018/07/25115124/Kids-now-spend-twice-as-much-time-playing-indoors-than-outdoors.jpg",
         "name": "Playing Game",
         "details": "I read in book now",
-        "time": "40s"
+        "time": 40
     },
     {
         "id": 5,
         "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgTVO2irR2c5odMnTmZHV3VM996iHi9tgcMQ&usqp=CAU",
         "name": "Reading Books",
         "details": "I read in book now",
-        "time": "50s"
+        "time": 50
     },
     {
         "id": 6,
         "img": "https://images.pexels.com/photos/2204196/pexels-photo-2204196.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "name": "GYM Time",
         "details": "I read in book now",
-        "time": "55s"
+        "time": 55
     }
 ]

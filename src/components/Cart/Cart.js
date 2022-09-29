@@ -4,9 +4,16 @@ import logo from '../../images/habib.jpeg';
 
 
 
-const Cart = () => {
+const Cart = (props) => {
+    const {cart} = props;
+
+    let total = 0;
+    for(const contain of cart){
+        total = total + contain.time; 
+    }
+
     return (
-        <div>
+        <div className='cart-body'>
 
             <div className='user-info'>
                 <img src={logo} alt="" />
@@ -24,16 +31,16 @@ const Cart = () => {
 
             <h3>Add A Break</h3>
             <div className='btn-container'>
-                <button className='btn'>10s</button>
-                <button className='btn'>20s</button>
-                <button className='btn'>30s</button>
-                <button className='btn'>40s</button>
+                <button className='btn'>5m</button>
+                <button className='btn'>10m</button>
+                <button className='btn'>15m</button>
+                <button className='btn'>20m</button>
             </div>
 
             <h3>Exercise Details</h3>
             <div className='time-details'>
-                <p className='exercise-time'>Exercise time : 0 seconds</p>
-                <p className='break-time'>Break time : 0 seconds</p>
+                <p className='exercise-time'>Exercise time : {total} Minutes</p>
+                <p className='break-time'>Break time : 0 Minutes</p>
             <button className='activity-btn'>Activity Completed</button>
             </div>
 
